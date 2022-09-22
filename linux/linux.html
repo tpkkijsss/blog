@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二，什么是Linux？ | 个人技术博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="https://github.com/tpkkijsss/images/blob/main/hero.png?raw=true">
+    <meta name="description" content="只要思想不滑坡,办法总比困难多">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.ee7d26fb.js" as="script"><link rel="preload" href="/assets/js/2.18f901df.js" as="script"><link rel="preload" href="/assets/js/17.cab09098.js" as="script"><link rel="prefetch" href="/assets/js/10.9ff8ace0.js"><link rel="prefetch" href="/assets/js/11.5f7022b4.js"><link rel="prefetch" href="/assets/js/12.1fdcae16.js"><link rel="prefetch" href="/assets/js/13.ec139111.js"><link rel="prefetch" href="/assets/js/14.af095668.js"><link rel="prefetch" href="/assets/js/15.218c9220.js"><link rel="prefetch" href="/assets/js/16.464a2b32.js"><link rel="prefetch" href="/assets/js/18.2c5d2e3a.js"><link rel="prefetch" href="/assets/js/19.8dc7e477.js"><link rel="prefetch" href="/assets/js/20.7e8a1856.js"><link rel="prefetch" href="/assets/js/21.d0246301.js"><link rel="prefetch" href="/assets/js/22.95dc31be.js"><link rel="prefetch" href="/assets/js/23.62ff68aa.js"><link rel="prefetch" href="/assets/js/24.c2cc5370.js"><link rel="prefetch" href="/assets/js/25.7b7093f8.js"><link rel="prefetch" href="/assets/js/3.8087e104.js"><link rel="prefetch" href="/assets/js/4.f6e5fc38.js"><link rel="prefetch" href="/assets/js/5.2ab98cfa.js"><link rel="prefetch" href="/assets/js/6.282182c8.js"><link rel="prefetch" href="/assets/js/7.ff524259.js"><link rel="prefetch" href="/assets/js/8.03cb6a11.js"><link rel="prefetch" href="/assets/js/9.e2c3d9d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人技术博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/test1.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test2.html" class="nav-link">
+  CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test3.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test4.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test5.html" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test6.html" class="nav-link">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="了解更多" class="dropdown-title"><span class="title">了解更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="了解更多" class="mobile-dropdown-title"><span class="title">了解更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  Node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          开发指南
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  本地开发
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  设计理念
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  术语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  从 0.x 迁移
+</a></li><li class="dropdown-subitem"><a href="https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Changelog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博客" class="dropdown-title"><span class="title">博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="博客" class="mobile-dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/test1.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test2.html" class="nav-link">
+  CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test3.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test4.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test5.html" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/pages/test6.html" class="nav-link">
+  后端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="了解更多" class="dropdown-title"><span class="title">了解更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="了解更多" class="mobile-dropdown-title"><span class="title">了解更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  Node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          开发指南
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  本地开发
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  设计理念
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  术语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/test1.html" class="nav-link">
+  从 0.x 迁移
+</a></li><li class="dropdown-subitem"><a href="https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Changelog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博客" class="dropdown-title"><span class="title">博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="博客" class="mobile-dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active"><span>科技改变世界</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/construction/open.html" class="sidebar-link">博客简介</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/linux/linux" class="sidebar-heading clickable open active"><span>Linux</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux/linux01.html" class="sidebar-link">Linux基础知识</a></li><li><a href="/linux/linux02.html" class="sidebar-link">常用命令</a></li><li><a href="/linux/jar.html" class="sidebar-link">解压与打包</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/linux/ci_cd" class="sidebar-heading clickable"><span>CI/CD</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="二-什么是linux"><a href="#二-什么是linux" class="header-anchor">#</a> 二，什么是Linux？</h2> <p>Linux是一种开放源代码的，类似于Unix的操作系统。</p> <h3 id="_2-1-linux哲学思想"><a href="#_2-1-linux哲学思想" class="header-anchor">#</a> 2.1  Linux哲学思想</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>bash
+一切都是一个文件（包括硬件）
+ 
+小型，单一用途的程序
+ 
+链接程序，共同完成复杂的任务
+ 
+避免令人困惑的用户界面
+ 
+配置数据存储在文本中
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_2-2-linux的特点"><a href="#_2-2-linux的特点" class="header-anchor">#</a> 2.2  Linux的特点</h3> <p>Linux支持多用户，各个用户对于自己的文件设备有自己特殊的权利，保证了各用户之间互不影响。多任务则是现在电脑最主要的一个特点，Linux可以使多个程序同时并独立地运行。</p> <p>Linux可以运行在多种硬件平台上，如具有x86、680×0、SPARC、Alpha等处理器的平台。此外Linux还是一种嵌入式操作系统，可以运行在掌上电脑、机顶盒或游戏机上。2001年1月份发布的Linux 2.4版内核已经能够完全支持Intel 64位芯片架构。同时Linux也支持多处理器技术。多个处理器同时工作，使系统性能大大提高。</p> <p>2.3  Linux的发行版本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>slackware:SUSE Linux Enterprise Server (SLES)
+ 
+opensuse桌面
+ 
+debian:ubuntu，mint
+ 
+redhat：rhel: redhatenterprise linux
+ 
+每18个月发行一个新版本
+ 
+CentOS：兼容rhel的格式
+ 
+中标麒麟：中标软件
+ 
+Fedora：每6个月发行一个新版本
+ 
+ArchLinux：轻量简洁
+ 
+Gentoo：极致性能，不提供传统意义的安装程序
+ 
+LFS: Linux From scratch 自制Linux
+ 
+Android: kernel+busybox（工具集）+java虚拟机
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="三-linux的发展过程"><a href="#三-linux的发展过程" class="header-anchor">#</a> 三，Linux的发展过程</h2> <h3 id="_3-1-linux的历史"><a href="#_3-1-linux的历史" class="header-anchor">#</a> 3.1  Linux的历史</h3> <p>操作系统，英语Operating System简称为OS。说道操作系统就需要先讲一讲Unix，UNIX操作系统，是一个强大的多用户、多任务操作系统，支持多种处理器架构，按照操作系统的分类，属于分时操作系统，最早由KenThompson、Dennis Ritchie和Douglas McIlroy于1969年在AT&amp;T的贝尔实验室开发。而linux就是一款类Unix系统。</p> <p>通常人们对linux都有一个错误的认识，就是这个名词&quot;linux操作系统&quot;,其实linux不是操作系统，linux是一个内核，linux系统构成包括：、Linux 内核、GNU 项目及其他项目的软件。当然，但人们已经习惯了用Linux来形容整个基于Linux内核，并且使用GNU 工程各种工具和数据库的操作系统。</p> <h3 id="_3-2-linux的开发者"><a href="#_3-2-linux的开发者" class="header-anchor">#</a> 3.2  Linux的开发者</h3> <p><img src="https://images2018.cnblogs.com/blog/1226410/201808/1226410-20180820184207888-978271633.png" alt=""></p> <p>林纳斯·本纳第克特·托瓦兹（Linus Benedict Torvalds, 1969年~ ），著名的电脑程序员、黑客。Linux内核的发明人及该计划的合作者。托瓦兹利在大学读书期间创造出了这套当今全球最流行的操作系统（作业系统）内核之一。</p> <h3 id="_3-3-linux发展历史"><a href="#_3-3-linux发展历史" class="header-anchor">#</a> 3.3  Linux发展历史</h3> <p>Linux操作系统的诞生、发展和成长过程始终依赖着五个重要支柱：UNIX 操作系统、MINIX 操作系统、GNU计划、POSIX 标准和Internet 网络。。</p> <p>1981 年IBM公司推出微型计算机IBM PC。</p> <p>1991年，GNU计划已经开发出了许多工具软件，最受期盼的GNU C编译器已经出现，GNU的操作系统核心HURD一直处于实验阶段，没有任何可用性，实质上也没能开发出完整的GNU操作系统，但是GNU奠定了Linux用户基础和开发环境。</p> <p>1991年初，林纳斯·托瓦兹开始在一台386sx兼容微机上学习minix操作系统。1991年4月，林纳斯·托瓦兹开始酝酿并着手编制自己的操作系统。</p> <p>1991 年4 月13 日在comp.os.minix 上发布说自己已经成功地将bash 移植到了minix 上，而且已经爱不释手、不能离开这个shell软件了。</p> <p>1991年7月3日，第一个与Linux有关的消息是在comp.os.minix上发布的（当然此时还不存在Linux这个名称，当时林纳斯·托瓦兹的脑子里想的可能是FREAX，FREAX的英文含义是怪诞的、怪物、异想天开等）。</p> <p>1991年的10月5日，林纳斯·托瓦兹在comp.os.minix新闻组上发布消息，正式向外宣布Linux内核的诞生（Freeminix-like kernel sources for 386-AT）。</p> <p>1993年，大约有100余名程序员参与了Linux内核代码编写/修改工作，其中核心组由5人组成，此时Linux 0.99的代码大约有十万行，用户大约有10万左右。</p> <p>1994年3月，Linux1.0发布，代码量17万行，当时是按照完全自由免费的协议发布，随后正式采用GPL协议。</p> <p>1995年1月，Bob Young创办了RedHat（小红帽），以GNU/Linux为核心，集成了400多个源代码开放的程序模块，搞出了一种冠以品牌的Linux，即RedHat Linux,称为Linux&quot;发行版&quot;，在市场上出售。这在经营模式上是一种创举。</p> <p>1996年6月，Linux 2.0内核发布，此内核有大约40万行代码，并可以支持多个处理器。此时的Linux 已经进入了实用阶段，全球大约有350万人使用。</p> <p>1998年2月，以Eric Raymond为首的一批年轻的&quot;老牛羚骨干分子&quot;终于认识到GNU/Linux体系的产业化道路的本质，并非是什么自由哲学，而是市场竞争的驱动，创办了&quot;Open Source Intiative&quot;（开放源代码促进会）&quot;复兴&quot;的大旗，在互联网世界里展开了一场历史性的Linux产业化运动。</p> <p>2001年1月，Linux 2.4发布，它进一步地提升了SMP系统的扩展性，同时它也集成了很多用于支持桌面系统的特性：USB，PC卡（PCMCIA）的支持，内置的即插即用，等等功能。</p> <p>2003年12月，Linux 2.6版内核发布，相对于2.4版内核2.6在对系统的支持都有很大的变化。</p> <p>2004年的第1月，SuSE嫁到了Novell，SCO继续顶着骂名四处强行“化缘”， Asianux， MandrakeSoft也在五年中首次宣布季度赢利。3月，SGI宣布成功实现了Linux操作系统支持256个Itanium 2处理器</p> <h2 id="四-linux发行版本"><a href="#四-linux发行版本" class="header-anchor">#</a> 四，Linux发行版本</h2> <p>1）Ubuntu  乌班图  开发人员</p> <p>2）redHat  红帽    国企 金融</p> <div class="language- extra-class"><pre><code>RedHat Linux 9.0 开源的最后一个版本
+
+Red Hat Enterprise Linux  RHEL
+</code></pre></div><p>3）CentOS  国内最火爆</p> <p>4）Fedora  相当于redhat的测试版  会把新功能 新想法 放入Fedora 稳定</p> <p>5）debian/freebasd  安全性要求比较高的环境才会用这两个系统</p> <p>6）SUSE/OpenSUSE    德国用的较多（在德国开发出来） 一般用在 高级数据库 邮件服务</p> <p>7）红旗linux 麒麟（中标麒麟）</p> <h3 id="centos-和-redhat的区别"><a href="#centos-和-redhat的区别" class="header-anchor">#</a> CentOS 和 RedHat的区别</h3> <p>1.RedHat 免费下载  项目收费  无法更新</p> <p>2.CentOS 做到与红帽一模一样，红帽收费项目 红帽logo去掉</p> <h2 id="五-unix-posix和标准unix规范"><a href="#五-unix-posix和标准unix规范" class="header-anchor">#</a> 五，Unix，Posix和标准UniX规范</h2> <p>20世纪60年代是大型、复杂操作系统盛行的年代，比如IBM的OS/360和Honeywell的Multics系统。OS/360是历史上最成功的软件项目之一，而 Multics虽然持续存在了多年，却从来没有被广泛应用过。贝尔实验室曾经是Multics项目的最初参与者，但是因为考虑到该项目的复杂性和缺乏进展而于1969年退出。鉴于Mutics项目不愉快的经历，一群贝尔实验室的研究人员Ken Thompson、 Dennis Ritchie、 Doug Mcllroy和 Joe Ossanna，从1969年开始在DEC PDP-7计算机上完全用机器语言编写了一个简单得多的操作系统。这个新系统中的很多思想，比如层次文件系统、作为用户级进程的 shell概念，都是来自于 Multics，只不过在一个更小、更简单的程序包里实现。1970年，Brian Kernighan给新系统命名为“Unix”，这也是一个双关语，暗指“Multics”的复杂性。1973年用C重新编写其内核，1974年，Unix开始正式对外发布。</p> <p>贝尔实验室以慷慨的条件向学校提供源代码，所以Unix在大专院校里获得了很多支持并得以持续发展。最有影响的工作发生在20世纪70年代晚期到80年代早期，在美国加州大学伯克利分校，研究人员在一系列发布版本中增加了虚拟内存和Internet协议，称为Unix4.xBSD(Berkeley Software Distribution)。与此同时，贝尔实验室也在发布自己的版本，称为System V Unix。其他厂商的版本，比如Sun Microsystems的Solaris系统,则是从这些原始的BSD和System V版本中衍生而来。</p> <p>20世纪80年代中期，Unix厂商试图通过加入新的、往往不兼容的特性来使它们的程序与众不同，麻烦也就随之而来了。为了阻止这种趋势，IEEE(电气和电子工程师协会)开始努力标准化Unix的开发，后来由 Richard Stallman命名为“Posix”。结果就得到了一系列的标准，称作Posix标准。这套标准涵盖了很多方面，比如Unix系统调用的C语言接口、shell程序和工具、线程及网络编程。最近，一个被称为“标准Unix规范”的独立标准化工作已经与Posix一起创建了统一的Unix系统标准。这些标准化工作的结果是Unix版本之间的差异已经基本消失。</p> <h2 id="六-unix-linux-bsd、posix、gnu"><a href="#六-unix-linux-bsd、posix、gnu" class="header-anchor">#</a> 六，UNIX/Linux/BSD、POSIX、GNU</h2> <h3 id="_6-1-unix来源"><a href="#_6-1-unix来源" class="header-anchor">#</a> 6.1 UNIX来源</h3> <div class="language- extra-class"><pre><code>Bell实验室的Ken Thompson开始利用一台闲置的 PDP-7计算机开发了一种多用户，多任务操作系统。很快，Dennis Richie加入了这个项目，在他们共同努力下诞生了最早的UNIX。Richie受一个更早的项目——MULTICS的启发，将此操作系统命名为 Unix。早期UNIX是用汇编语言编写的，但其第三个版本用一种崭新的编程语言C重新设计了。C是Richie设计出来并用于编写操作系统的程序语言。通过这次重新编写，Unix得以移植到更为强大的 DEC PDP-11/45与11/70计算机上运行。后来发生的一切，正如他们所说，已经成为历史。Unix从实验室走出来并成为了操作系统的主流，现在几乎每个主要的计算机厂商都有其自有版本的Unix。
+</code></pre></div><h3 id="_6-2-posix来源"><a href="#_6-2-posix来源" class="header-anchor">#</a> 6.2 POSIX来源</h3> <div class="language- extra-class"><pre><code>随着UNIX成长，后来占领了市场，公司多了，懂得人也多了，就分家了。而“UNIX”这个名字由于法律关系，谁也不能说自己的操作系统是“UNIX”而只能说是“UNIX兼容”系统了。所以现在“UNIX”系统严格意义上说是不存在的，存在的只是一个遥远的传说。那么现在那些Solaris,AIX,IRIS都是什么呢？那些都是各公司在他们硬件平提上作的商业UNIX，这些系统都遵循一个叫POSIX的古怪标准，对了，这个标准呢，是后来UNIX太多太乱，大家编程接口甚至命令都不一样了所以没办法座下来商量的一个协议。
+</code></pre></div><h3 id="_6-3-linux来源"><a href="#_6-3-linux来源" class="header-anchor">#</a> 6.3 Linux来源</h3> <div class="language- extra-class"><pre><code>Linux起源于一个学生的简单需求。Linus Torvalds,Linux的作者与主要维护者，在其上大学时所买得起的唯一软件是Minix. Minix是一个类似Unix，被广泛用来辅助教学的简单操作系统。Linus 对Minix不是很满意，于是决定自己编写软件。他以学生时代熟悉的Unix作为原型， 在一台Intel 386 PC上开始了他的工作。他的进展很快，受工作成绩的鼓舞，他将这项成果通过互连网与其他同学共享，主要用于学术领域。有人看到了这个软件并开始分发。每当出现新问题时，有人会立刻找到解决办法并加入其中，很快的， Linux成为了一个操作系统。值得注意的是Linux并没有包括Unix源码。它是按照公开的POSIX标准重新编写的。Linux大量使用了由麻省剑桥免费软件基金的GNU软件，同时Linux自身也是用它们构造而成。
+</code></pre></div><h3 id="_6-3-gun来源"><a href="#_6-3-gun来源" class="header-anchor">#</a> 6.3 GUN来源</h3> <p>GNU就是GNU's Not Unix的缩写， GNU 的创始人Stallman 认为UNIX虽然不是最好的操作系统，但是至少不会太差，而他自信有能力把UNIX 不足的地方加以改进，使它成为一个优良的操作系统，就是名为GNU的一个同UNIX兼容的操作系统，并且开发这 个系统的目的就是为了让所有计算机用户都可以自由地获得这个系统。任何人都可以免费地获得这个系统的源代码，并且可以相互自由拷贝GNU 是由自由软件基金会 (Free Software Foundation，FSF)的董事长Richard M. Stallman （RMS）于1984年发起的，如今已经有十几年的历史了。</p> <div class="language- extra-class"><pre><code>GNU 开始的策略就是先开发UNIX已经有的程序（因为计划中GNU将会是一个与UNIX兼容的操作系统，而UNIX下的标准使用界面已经非常完善了，所以先依照这个标准开发应用程序，将来GNU自己的系统核心一出来，就立即可以使用所有先前开发的GNU 应用程序），因此会先有emacs，GCC等工具软件开发出来。其中GCC更是GNU计划自立更生的一个重要步骤（不需要依靠商业软件来产生/编译整个GNU系统），如今这套程序开发工具已经很成熟了。
+</code></pre></div><p>下一步要做的就是开发GNU的核心－－Hurd了，只要Hurd一开发出来，GNU 就是一套能够自我开机，真正自给自足，完整的自由操作系统。Hurd是基于Mach这个微内核（micro kernel）上的操作系统核心。以后会使用尤他大学的Mach4（一个更为方便和快速的微内核），由于Hurd基于Mach，所以只要Mach移植到什么机器上，Hurd也立刻就是这种硬件平台的操作系统，就这一点而言，它是一种很前卫的操作系统。</p> <p>但是，GNU的操作系统核心Hurd一直处于实验阶段，没有任何可用性，实质上也没能开发出完整的GNU操作系统，但是GNU奠定了Linux用户基础和开发环境。自由软件基金会目前有一套以Linux为核心的GNU系统计划。这个计划就是自由软件基金会支持的 Debian Linux。 Debian Linux 是GNU软件与公共软件（Public Domain Software）最彻底的结合，它是一套完全由GNU和公共软件配置起来的，而且具有商业操作系统水平的操作系统。</p> <p>Linux加入GNU之后，成了“自由的OS”，称为“GNU/Linux”。</p> <h3 id="_6-4-bsd来源"><a href="#_6-4-bsd来源" class="header-anchor">#</a> 6.4 BSD来源</h3> <div class="language- extra-class"><pre><code>BSD 则代表“Berkeley Software Distribution，伯克利软件套件”，其源于对加州大学伯克利分校所开发的贝尔实验室UNIX的一系列修改，它最终发展成一个完整的操作系统，现在有多个不同的BSD分支。今天，“BSD”并不特指任何一个BSD衍生版本，而是类UNIX操作系统中的一个分支的总称。
+</code></pre></div><h3 id="_6-5-bsd分支"><a href="#_6-5-bsd分支" class="header-anchor">#</a> 6.5 BSD分支</h3> <p>以下是通常认可的三个“主流” BSD 操作系统：</p> <ul><li><a href="http://www.freebsd.org/" target="_blank" rel="noopener noreferrer">FreeBSD<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>: FreeBSD 是最受欢迎的 BSD，针对高性能和易用性。它支持英特尔和 AMD 的32位和64位处理器。</li> <li><a href="http://www.netbsd.org/" target="_blank" rel="noopener noreferrer">NetBSD<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>: NetBSD 被设计运行在几乎任何架构上，支持更多的体系结构。在他们的主页上的格言是&quot;理所当然，我们运行在 NetBSD 上&quot;。</li> <li><a href="http://www.openbsd.org/" target="_blank" rel="noopener noreferrer">OpenBSD<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:OpenBSD 为最大化的安全性设计的 —— 这不仅仅它宣称的功能，在实践中也确实如此。它是为银行和其他重要机构的关键系统设计的。</li></ul> <p>还有两个其他的重要 BSD 操作系统：</p> <ul><li><a href="http://www.dragonflybsd.org/" target="_blank" rel="noopener noreferrer">DragonFly BSD<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>: DragonFly BSD 的设计目标是提供一个运行在多线程环境中的操作系统 —— 例如，计算机集群。</li> <li><a href="http://opensource.apple.com/" target="_blank" rel="noopener noreferrer">Darwin / Mac OS X<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>: Mac OS X 实际上基于 Darwin 操作系统，而 Darwin 系统基于 BSD。它与其他的 BSD 有点不同，虽然底层内核和其他的软件是开源代码(BSD 代码)，但操作系统的大部分是闭源的 Mac OS 代码)。苹果在 BSD 基础上开发了 Mac OS X 和 iOS，这样他们就不必写操作系统底层，就像 <a href="http://www.howtogeek.com/189036/android-is-based-on-linux-but-what-does-that-mean/" target="_blank" rel="noopener noreferrer">谷歌在 Linux 基础上开发 android 系统<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>一样。</li></ul> <h3 id="_6-6-linux和bsd分支"><a href="#_6-6-linux和bsd分支" class="header-anchor">#</a> 6.6 LINUX和BSD分支</h3> <h4 id="_6-6-1-许可证"><a href="#_6-6-1-许可证" class="header-anchor">#</a> 6.6.1，许可证</h4> <div class="language- extra-class"><pre><code>许可证是典型的差异，虽然它不会对大多数人产生影响。
+
+Linux 使用 GNU 通用公共许可证，即 GPL。如果你修改了 Linux 内核，并将其分发，你就必须放出您的修改的源代码。
+
+BSD 使用 BSD 许可证。如果你修改了 BSD 内核或发行版，并且发布它，你根本不需要必须发布其源代码。你可以自由地对你的 BSD 代码做任何你想做的事情，你没有义务发布的你修改的源代码，当然你想发布也行。
+
+两者都是开放源码的，但是以不同的方式。人们有时会陷入关于哪种许可证是“更自由”的辩论。GPL 可以帮助用户以确保他们可以拥有 GPL 软件的源代码，并限制开发人员迫使他们开放代码。BSD 许可证并不能确保用户可以拥有源代码，而是给开发人员选择是否公布代码的权利，即使他们想要把它变成一个闭源项目。
+</code></pre></div><h4 id="_6-6-2-使用"><a href="#_6-6-2-使用" class="header-anchor">#</a> 6.6.2，使用</h4> <div class="language- extra-class"><pre><code>Linux 显然比 FreeBSD 更受欢迎。例如，Linux 往往会比 FreeBSD 更早提供新硬件的支持。BSD 有一个兼容包可用，使之能像大多数的其他软件一样原生的执行 Linux 二进制程序。
+
+如果您使用过 Linux， FreeBSD 不会让你感觉到太大的不同。如果把 FreeBSD 作为桌面操作系统，你也可以使用相同的 GNOME，KDE 或 Xfce 桌面环境，你也可以在BSD上使用 Linux 上的大多数的其他软件。有一点需要注意，FreeBSD 不会自动安装的图形化桌面，所以你要花相对于 Linux 更多的心思来照顾你的BSD。BSD 更守旧一些。
+
+FreeBSD 的可靠性和稳定性也许更适合作为服务器的操作系统。而厂商也会选择 BSD 而不是 Linux 作为其操作系统，因为这样他们就不必放出他们修改的代码。
+
+如果你是一个 PC 桌面用户，你真的不需要太过在意 BSD。你可能会喜欢 Linux，因为它具有更先进的硬件支持，更容易安装，具有现代操作系统的特点。如果你关注服务器或嵌入式的设备，你可能会更喜欢 FreeBSD。
+
+我们可能会听到一些人说他们在桌面电脑上使用 FreeBSD，你当然也可能是其中之一！但像 Ubuntu 或 Mint 一样的开源操作系统对于多数用户来说更体验良好和更先进些
+</code></pre></div><h5 id="_1-1-jdk安装"><a href="#_1-1-jdk安装" class="header-anchor">#</a> 1.1 jdk安装</h5> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#创建存放目录</span>
+<span class="token function">mkdir</span> /apps
+<span class="token comment">#jdk安装</span>
+<span class="token comment">#做软链接</span>
+<span class="token function">ln</span> <span class="token parameter variable">-sv</span> /apps/jdk1.8.0_202 /apps/jdk
+<span class="token function">ln</span> <span class="token parameter variable">-sv</span> /apps/jdk/bin/java /usr/bin
+<span class="token comment">#写入环境变量</span>
+<span class="token function">vim</span> /etc/profile
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/apps/jdk
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token variable">$JAVA_HOME</span>/jre/bin:<span class="token environment constant">$PATH</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>.<span class="token variable">$CLASSPATH</span><span class="token builtin class-name">:</span><span class="token variable">$JAVA_HOME</span>/lib:<span class="token variable">$JAVA_HOME</span>/jre/lib:<span class="token variable">$JAVA_HOME</span>/lib/tools.jar
+<span class="token comment">#环境变量生效</span>
+<span class="token builtin class-name">source</span> /etc/profile
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h5 id="_1-2-安装jenkins"><a href="#_1-2-安装jenkins" class="header-anchor">#</a> 1.2 安装jenkins</h5> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#创建存放目录</span>
+<span class="token function">mkdir</span> /opt/jenkins
+<span class="token comment">#下载相关jenkins软件包(https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.346.2-1.1.noarch.rpm)</span>
+<span class="token function">wget</span> https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.346.2-1.1.noarch.rpm
+<span class="token comment">#安装jenkins</span>
+yum localinstall jenkins-2.319.1-1.1.noarch.rpm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="_1-3-jenkins相关的文件"><a href="#_1-3-jenkins相关的文件" class="header-anchor">#</a> 1.3 jenkins相关的文件</h5> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#查看jenkins相关的文件</span>
+<span class="token function">rpm</span> <span class="token parameter variable">-ql</span> jenkins 
+/etc/init.d/jenkins				<span class="token comment"># 启动文件</span>
+/etc/logrotate.d/jenkins		<span class="token comment"># 日志轮询切割文件</span>
+/etc/sysconfig/jenkins			<span class="token comment"># Jenkins主配置文件</span>
+/usr/lib/jenkins
+/usr/lib/jenkins/jenkins.war	<span class="token comment"># 升级包，如果要升级只要在官网下载最新的jenkins.war往这里替换就更新完成了</span>
+/usr/sbin/rcjenkins
+/var/cache/jenkins				<span class="token comment"># 缓存目录</span>
+/var/lib/jenkins				<span class="token comment"># jenkins家目录</span>
+/var/log/jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ee7d26fb.js" defer></script><script src="/assets/js/2.18f901df.js" defer></script><script src="/assets/js/17.cab09098.js" defer></script>
+  </body>
+</html>
